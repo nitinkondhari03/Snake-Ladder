@@ -1,10 +1,12 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { BsRobot, BsFillPersonFill } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 const Home = () => {
   const [open, setOpen] = useState(false);
   const cancelButtonRef = useRef(null);
   let welcome = new Audio("Sneaky-Snitch.mp3");
+  const navigate = useNavigate();
   const handleClick = () => {
     setOpen(true);
   };
@@ -67,7 +69,7 @@ const Home = () => {
                     <button
                       type="button"
                       className="flex space-x-10 justify-center rounded-md bg-red-600 px-5 py-8 text-sm font-semibold text-white hover:bg-red-500 w-auto"
-                      onClick={() => setOpen(false)}
+                      onClick={() => navigate("/randomplayer")}
                     >
                       <BsRobot size={"25px"} /> <p className="text-lg">VS</p>
                       <BsFillPersonFill size={"25px"} />
@@ -75,7 +77,7 @@ const Home = () => {
                     <button
                       type="button"
                       className="flex space-x-10 justify-center rounded-md bg-purple-500 px-5 py-8 text-sm font-semibold text-white hover:bg-purple-400 w-auto"
-                      onClick={() => setOpen(false)}
+                      onClick={() => navigate("/twoplayer")}
                       ref={cancelButtonRef}
                     >
                       <BsFillPersonFill size={"25px"} />{" "}
