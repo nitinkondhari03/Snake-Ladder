@@ -7,22 +7,33 @@ import Dice from "react-dice-roll";
 
 const NUM_CELLS = 100;
 const SNAKE_LADDERS:any = {
-  7: 100,
-  8: 100,
-  9: 100,
-  10: 100,
-  36: 16,
-  47: 26,
-  49: 11,
-  51: 7,
-  56: 53,
-  62: 18,
-  64: 60,
-  71: 28,
-  87: 24,
-  93: 73,
-  95: 75,
-  98: 78,
+  3:20,
+  6:14,
+  8:4,
+  11:28,
+  15:34,
+  17:74,
+  18:1,
+  22:37,
+  26:10,
+  38:59,
+  51:6,
+  54:36,
+  49:67,
+  56:1,
+  57:76,
+  60:23,
+  61:78,
+  73:86,
+  75:28,
+  81:98,
+  83:45,
+  85:59,
+  88:91,
+  90:48,
+  92:25,
+  97:87,
+  99:63,
 };
 
 interface Player {
@@ -48,7 +59,7 @@ const [count,setcount]=useState<number>(0)
 
 
 const hadlevalue=(value:number)=>{
-  //  rolldics.play()
+    rolldics.play()
   handleRoll(value)
   setcount(count+1)
 
@@ -89,7 +100,7 @@ const hadlevalue=(value:number)=>{
     {!winner?<div className="twoplarer" style={{display:"flex"}}>
       <div style={{display:"block",marginLeft:"auto"}}>
     <div style={{margin:"auto"}} >
-    <h1 style={{color:"white"}}>{"Player 1"}</h1>
+    <h1 style={{color:"Coral",fontSize:"40px",fontWeight:"bold"}}>{"Player 1"}</h1>
       {count==0 &&<Dice size={150} onRoll={(value) => hadlevalue(value)} />
       }
       {playername=="Player 1"&& <h1>Last Roll{rollnumber}</h1>}
@@ -98,7 +109,7 @@ const hadlevalue=(value:number)=>{
     </div>
 
     <div style={{margin:"auto",marginTop:"200px"}} >
-    <h1 style={{color:"white"}}>{"Player 3"}</h1>
+    <h1 style={{color:"Coral",fontSize:"40px",fontWeight:"bold"}}>{"Player 3"}</h1>
     
       {playername=="Player 3"&& <h1>Last Roll{rollnumber}</h1>}
      {playername=="Player 2" &&
@@ -147,6 +158,8 @@ const hadlevalue=(value:number)=>{
           style={{
             left: `${((player.pos - 1) % 10) * 10}%`,
             bottom: `${Math.floor((player.pos - 1) / 10) * 10}%`,
+            fontSize:"18px",
+            color:"white"
           }}
         >
         
@@ -158,14 +171,14 @@ const hadlevalue=(value:number)=>{
     </div>
     <div style={{display:"block",marginRight:"auto"}}>
  <div style={{margin:"auto"}}>
- <h1 style={{color:"white"}}>{"Player 2"}</h1>
+ <h1 style={{color:"Coral",fontSize:"40px",fontWeight:"bold"}}>{"Player 2"}</h1>
  
     {playername=="Player 1"&& <Dice  size={150} onRoll={(value) => hadlevalue(value)} />}
    
    
     </div>
     <div style={{margin:"auto",marginTop:"200px"}} >
-    <h1 style={{color:"white"}}>{"Player 4"}</h1>
+    <h1 style={{color:"Coral",fontSize:"40px",fontWeight:"bold"}}>{"Player 4"}</h1>
     
       {playername=="Player 4"&& <h1>Last Roll{rollnumber}</h1>}
      {playername=="Player 3" &&
@@ -177,7 +190,27 @@ const hadlevalue=(value:number)=>{
 <div className="blackgroudimhj">
 
 </div>
-  <h1 style={{color:"yellow"}}>{winner}</h1>
+<h1 style={{color:"Coral",fontSize:"40px",fontWeight:"bold"}}>{winner?"YOU":"BOT"}</h1>
+  <a href="/"><button
+              style={{
+                fontSize: "30px",
+                borderRadius: "100px",
+                color: "#212517",
+                backgroundColor: "#C7AD61",
+                border: "none",
+                padding: "20px",
+                cursor: "pointer",
+                width: "150px",
+                height: "100px",
+                margin: "auto",
+                backgroundImage:
+                  "url(https://cdnb.artstation.com/p/assets/images/images/032/539/853/original/anto-thomas-button-gif.gif?1606754895)",
+                backgroundSize: "contain",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",   
+              }}
+            ></button>
+          </a>
 </div>
     }
     </>
