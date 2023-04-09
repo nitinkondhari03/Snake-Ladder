@@ -52,7 +52,7 @@ const Home = () => {
                 leaveFrom="opacity-100 translate-y-0 scale-100"
                 leaveTo="opacity-0 translate-y-4 translate-y-0 scale-95"
               >
-                <Dialog.Panel className="relative transform overflow-hidden rounded-lg text-left transition-all my-8 w-full max-w-lg">
+                <Dialog.Panel className="relative transform overflow-hidden rounded-lg text-left transition-all my-8 w-full max-w-2xl">
                   <div className="px-4 pb-4 pt-5 p-6 pb-4">
                     <div>
                       <div className="mt-3 text-center">
@@ -66,24 +66,66 @@ const Home = () => {
                     </div>
                   </div>
                   <div className=" px-8 py-5 flex space-x-12 items-center justify-center ">
-                    <button
-                      type="button"
-                      className="flex space-x-10 justify-center rounded-md bg-red-600 px-5 py-8 text-sm font-semibold text-white hover:bg-red-500 w-auto"
-                      onClick={() => navigate("/randomplayer")}
-                    >
-                      <BsRobot size={"25px"} /> <p className="text-lg">VS</p>
-                      <BsFillPersonFill size={"25px"} />
-                    </button>
-                    <button
-                      type="button"
-                      className="flex space-x-10 justify-center rounded-md bg-purple-500 px-5 py-8 text-sm font-semibold text-white hover:bg-purple-400 w-auto"
-                      onClick={() => navigate("/twoplayer")}
-                      ref={cancelButtonRef}
-                    >
-                      <BsFillPersonFill size={"25px"} />{" "}
-                      <p className="text-lg">VS</p>
-                      <BsFillPersonFill size={"25px"} />
-                    </button>
+                    <div className="space-y-12">
+                      <button
+                        type="button"
+                        className="flex space-x-10 justify-center rounded-md bg-red-600 px-5 py-8 text-sm font-semibold text-white hover:bg-red-500 w-auto"
+                        onClick={() => navigate("/randomplayer")}
+                      >
+                        <BsRobot size={"25px"} /> <p className="text-lg">VS</p>
+                        <BsFillPersonFill size={"25px"} />
+                      </button>
+                      <button
+                        type="button"
+                        className="flex space-x-10 justify-center rounded-md bg-red-600 px-5 py-8 text-sm font-semibold text-white hover:bg-red-500 w-auto"
+                        onClick={() => navigate("/threeplayer")}
+                      >
+                        <div>
+                          <BsFillPersonFill size={"25px"} />{" "}
+                          <p className="text-lg">VS</p>
+                          <BsFillPersonFill size={"25px"} />
+                        </div>
+                        <div>
+                          <p className="text-lg mt-5 ">VS</p>
+                        </div>
+                        <div>
+                          <BsFillPersonFill size={"25px"} className="mt-5" />
+                        </div>
+                      </button>
+                    </div>
+                    <div className="space-y-12">
+                      <button
+                        type="button"
+                        className="flex space-x-10 justify-center rounded-md bg-purple-500 px-5 py-8 text-sm font-semibold text-white hover:bg-purple-400 w-auto"
+                        onClick={() => navigate("/twoplayer")}
+                        ref={cancelButtonRef}
+                      >
+                        <BsFillPersonFill size={"25px"} />{" "}
+                        <p className="text-lg">VS</p>
+                        <BsFillPersonFill size={"25px"} />
+                      </button>
+                      <button
+                        type="button"
+                        className="flex space-x-10 justify-center rounded-md bg-purple-500 px-5 py-8 text-sm font-semibold text-white hover:bg-purple-400 w-auto"
+                        onClick={() => navigate("/fourplayer")}
+                        ref={cancelButtonRef}
+                      >
+                        <div>
+                          <BsFillPersonFill size={"25px"} />{" "}
+                          <p className="text-lg">VS</p>
+                          <BsFillPersonFill size={"25px"} />
+                        </div>
+                        <div>
+                          <p className="text-lg ">VS</p>
+                          <p className="text-lg mt-5">VS</p>
+                        </div>
+                        <div>
+                          <BsFillPersonFill size={"25px"} />
+                          <p className="text-lg">VS</p>
+                          <BsFillPersonFill size={"25px"} />
+                        </div>
+                      </button>
+                    </div>
                   </div>
                 </Dialog.Panel>
               </Transition.Child>
