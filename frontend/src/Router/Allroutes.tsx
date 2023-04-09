@@ -12,10 +12,10 @@ const AllRoutes=()=>{
             <Route path="/" element={<Home/>}/>
             <Route path="/login" element={<Login/>}/>
             <Route path="/signup" element={<Signup/>}/>
-            <Route path="twoplayer" element={<SnankLadderTwoplayer/>}/>
-            <Route path="threeplayer" element={<SnankLadderThreeplayer/>}/>
-            <Route path="fourplayer" element={<SnankLadderFourplayer/>}/>
-            <Route path="randomplayer" element={<SnankLadderRandom/>}/>
+            <Route path="/twoplayer" element={<SnankLadderTwoplayer/>}/>
+            <Route path="/threeplayer" element={<SnankLadderThreeplayer/>}/>
+            <Route path="/fourplayer" element={<SnankLadderFourplayer/>}/>
+            <Route path="/randomplayer" element={<SnankLadderRandom/>}/>
             
       </Routes>
       </>)
