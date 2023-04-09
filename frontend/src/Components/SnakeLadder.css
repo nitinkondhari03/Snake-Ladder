@@ -1,0 +1,62 @@
+
+.twoplarer{
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://wallpaperaccess.com/full/2081864.png");
+  background-repeat: no-repeat;
+background-size: 100% 100%;
+}
+.game-board {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: repeat(10, 1fr);
+      border: 1px solid black;
+      width: 1000px;
+      height: 650px;
+      margin: 0 auto;
+      position: relative;
+      background-image: url("https://cdn2.vectorstock.com/i/1000x1000/30/56/snakes-and-ladders-board-game-design-vector-413056.jpg");
+      background-repeat: no-repeat;
+  background-size: 100% 108%;
+    }
+    
+    .cell {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      font-weight: bold;
+      border: 1px solid black;
+    }
+    
+    .player {
+      position: absolute;
+      width: 10%;
+      height: 10%;
+      background-color: red;
+      border-radius: 50%;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .winner{
+      color: white;
+      width: 100%;
+      height: 100vh;
+      background-image: url("https://wallpaperaccess.com/full/2081864.png");
+      background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+    .blackgroudimhj{
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: repeat(10, 1fr);
+      border: 1px solid black;
+      width: 1000px;
+      height: 650px;
+      margin: 0 auto;
+      position: relative;
+      background-image: url("https://cdn.dribbble.com/users/2223437/screenshots/4915952/win_celebration_pop-up.gif");
+      background-repeat: no-repeat;
+  background-size: 100% 108%;
+    }
+    

@@ -1,0 +1,40 @@
+.game-board {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: repeat(10, 1fr);
+      border: 1px solid black;
+      width: 1000px;
+      height: 600px;
+      margin: 0 auto;
+      position: relative;
+      background-image: url("https://as2.ftcdn.net/v2/jpg/04/71/35/61/1000_F_471356144_rQ4ELeb0p59MXaf8Mrf8df9XMz5j6sCd.jpg");
+      background-repeat: no-repeat;
+  background-size: 100% 100%;
+    }
+    
+    .cell {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      font-weight: bold;
+      border: 1px solid black;
+    }
+    
+    .player {
+      position: absolute;
+      width: 10%;
+      height: 10%;
+      background-color: rgb(30, 30, 175);
+      border-radius: 50%;
+      transition: all 0.3s ease-in-out;
+    }
+    .player1{
+      position: absolute;
+      width: 10%;
+      height: 10%;
+      background-color: rgb(18, 45, 184);
+      border-radius: 50%;
+      transition: all 0.3s ease-in-out;
+    }
+    
