@@ -3,15 +3,12 @@ const UserModel = require("../models/user.model");
 const userRoutes = express.Router();
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const { verifyToken } = require("../middlewares/authenticate");
+// const { verifyToken } = require("../middlewares/authenticate");
 
 userRoutes.get("/",async(req,res)=>{
     try{
         const user  = await UserModel.find();
-        res.status(200).send({
-            msg:user,
-            status:"success"
-        })
+        res.status(200).json(user)
     }
     catch(e){
       res.status(400).send({
@@ -65,12 +62,13 @@ userRoutes.post("/login", async (req, res) => {
   }
 });
 
-userRoutes.use(verifyToken);
+
 
 userRoutes.patch("/update/:id",async(req,res)=>{
-  
+  let user = UserModel.findOne(req.body.params);
+  let payload = {...user,coins:req.body.coins}
   try {
-    await UserModel.findByIdAndUpdate(req.params.id, req.body);
+    await UserModel.findByIdAndUpdate(req.params.id, payload);
     res.status(200).send({ msg: "User details has been updated", status: "success" });
 } catch (e) {
     res.status(400).send({ msg: e.message });
