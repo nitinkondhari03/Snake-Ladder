@@ -1,14 +1,11 @@
 
 import './App.css';
 
-import Home from './Components/Home';
-import SnankLadderRandom from './Components/SnankLadderRandom'
-import Login from './Components/config/Login'
+import AllRoutes from './Router/Allroutes';
 function App() {
   return (
     <div className="App">
-    <Login/>
-    {/* <SnankLadderRandom/> */}
+  <AllRoutes/>
     </div>
   );
 }

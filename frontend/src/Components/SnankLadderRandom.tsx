@@ -46,7 +46,7 @@ const [count,setcount]=useState<number>(0)
 
 
 const hadlevalue=(value:number)=>{
-   rolldics.play()
+  //  rolldics.play()
   handleRoll(value)
   setcount(count+1)
 

@@ -30,7 +30,7 @@ interface Player {
   pos: number;
 }
 
-const SnankLadderTwoplayer = () => {
+const SnankLadderThreeplayer = () => {
   let rolldics= new Audio ("SnakesAndLadder_rpg-dice-rolling-95182.mp3")
   const [players, setPlayers] = useState<Player[]>([
     { name: "Player 1", pos: 1 },
@@ -174,4 +174,4 @@ const hadlevalue=(value:number)=>{
   );
 };
 
-export default SnankLadderTwoplayer;
+export default SnankLadderThreeplayer ;
