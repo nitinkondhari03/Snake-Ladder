@@ -1,5 +1,5 @@
 # hackthon_virtual-
-<img width="400" align="right" alt="snake-ladder" src="https://user-images.githubusercontent.com/103588575/229435006-1d77bb6c-fb2e-4080-9786-d89fc73d57f9.png">
+<img width="400" align="right" alt="snake-ladder" src="https://user-images.githubusercontent.com/112820279/230904203-ed990e5e-61fc-485e-b938-fd95aa64d637.png">
 
 # Snake Ladder
 
@@ -9,10 +9,11 @@ Snake and Ladder Game
 and it is an multiplayer game which user can be able to play in single device.The game is built using React.js, Node.js, Express and MongoDB, TypeScript, tailwindCSS.
 <br><br><b>This is a collaborative project of  members</b><br><br>- Nitin Kondhari<br>- Yash Sharma <br>- Rajat Kaswan<br>- Ankesh Chopde</p>
 
-Features:-
-User can authentication
-Users can able to select game with bot or with 2 player, 3 player
-
+Features:-<br/>
+User can do authentication.<br/>
+Users can able to select game with bot or with 2 player, 3 player 
+<br/>
+<br/>
 Technologies Used
 React.js
 Node.js
@@ -20,17 +21,22 @@ Express
 MongoDB
 TypeScript
 TailwindCss
+<br/>
+<br/>
 Getting Started
 To get started with the project, follow these steps:
-
+<br/>
+<br/>
 Clone the repository: git clone https://github.com/nitinkondhari03/hackthon_virtual-.git
 Navigate to the project directory: cd frontend
 Install dependencies: npm install
 Start the development server: npm start
 Contributing
 Contributions are welcome! If you find any bugs or issues, please report them by opening an issue. If you want to contribute code, please follow these steps:
-
+<br/>
+<br/>
 Fork the repository.
+<br/>
 Create a new branch: git checkout -b <branch-name>
 Make your changes and commit them: git commit -am 'Add some feature'
 Push to the branch: git push origin <branch-name>
@@ -40,58 +46,30 @@ Create a new Pull Request.
 
 <h3>Home Page</h3>
 
-![image]()
+![image](https://user-images.githubusercontent.com/112820279/230904437-befd7ca2-81c9-4f33-9925-0cb83f52b5c0.png)
+  
+<h3>SignUp Page</h3>
 
-![image](https://user-images.githubusercontent.com/103588575/229437047-0ea7267b-cf50-49bc-9d86-12ce6ee17fd3.png)
+![Signup](https://user-images.githubusercontent.com/112820279/230904802-a0cc3e94-0b8f-4c0c-ad11-9de1dccae4d5.png)  
+  
+<h3>Login Page</h3>
 
-![image](https://user-images.githubusercontent.com/103588575/229437215-1e31142e-f93a-4220-bf43-7948420f58a8.png)
+![Login](https://user-images.githubusercontent.com/112820279/230904598-584f5987-50c9-40c0-8e56-4da810d07af4.png)
 
-<h3>Products page</h3>
+<h3>Multiplayer_select_Modal</h3>
 
-![image](https://user-images.githubusercontent.com/103588575/229437323-6e1c2e16-f40c-4d6b-82ab-46ed079a7017.png)
+![multiplayer_select](https://user-images.githubusercontent.com/112820279/230904922-37ba00db-4d2b-4360-8660-a6ed07073a25.png)
 
-<h3>Product Detail page</h3>
+<h3>Play_with_BOT</h3>
 
-![image](https://user-images.githubusercontent.com/103588575/229437463-e060e004-06c5-4315-af0b-04c01037853d.png)
+![Play_with_bot](https://user-images.githubusercontent.com/112820279/230905015-1bbe263a-4b3b-4a32-a860-2e087e56c2b6.png)
 
-<h3>Login page</h3>
+<h3>Play_With_Multiplayers</h3>
 
-![image](https://user-images.githubusercontent.com/103588575/229437636-5a694589-3a07-4a9b-a31d-023646e5c06b.png)
-
-<h3>Cart page</h3>
-
-![image](https://user-images.githubusercontent.com/103588575/229437795-706529bf-9aa6-4ffb-9f52-d4b221d1c213.png)
-
-<h3>Address page</h3>
-
-![image](https://user-images.githubusercontent.com/103588575/229438015-ae3067cd-e0e2-4af0-9b09-3b8647dba151.png)
-
-<h3>Payment page</h3>
-
-![image](https://user-images.githubusercontent.com/103588575/229438353-ecd33dbf-13a2-4bbf-91be-e83e809ac368.png)
-
-<h3>Wishlist page</h3>
-
-![image](https://user-images.githubusercontent.com/103588575/229438490-b2052d74-6e03-4ccb-b682-06bf6d96a7ce.png)
-
-<h3>Admin page</h3>
-
-![image](https://user-images.githubusercontent.com/103588575/229438765-4e221dfc-78ef-4b09-83ac-237618fb5d80.png)
-
-![image](https://user-images.githubusercontent.com/103588575/229439174-74c76ac1-7b30-4e07-b6ea-5df7c8900031.png)
-
-![image](https://user-images.githubusercontent.com/103588575/229439451-50fbf250-edce-4e5d-accd-2b374202c275.png)
-
-![image](https://user-images.githubusercontent.com/103588575/229439516-410657c2-de4e-4fe2-a37a-4ce40ef2ffb3.png)
-
-![image](https://user-images.githubusercontent.com/103588575/229439597-f6c61799-dc8c-4895-9735-4b171ee5d4e1.png)
-
-![image](https://user-images.githubusercontent.com/103588575/229439636-fd5c1ee8-c9a2-491f-a1ac-56ffd4754434.png)
-
-![image](https://user-images.githubusercontent.com/103588575/229439718-43f53c33-17b7-4b42-aca9-ab5548155818.png)
+![Play_with_multiplayer](https://user-images.githubusercontent.com/112820279/230905175-b67c04cf-6517-463d-8935-34f94625a16c.png)
 
 <h2>Deployed Link</h2>
 
-[Decor Dash](https://decordash.vercel.app)
+[Snake_Ladder_Game](https://warm-selkie-a7ef5b.netlify.app/)
 
 
