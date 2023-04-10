@@ -1,8 +1,5 @@
 <h1>Snake Ladder</h1>
 <img width="400" align="right" alt="snake-ladder" src="https://user-images.githubusercontent.com/112820279/230904203-ed990e5e-61fc-485e-b938-fd95aa64d637.png">
-
-# Snake Ladder
-
 Snake and Ladder Game
 
 <p id="description">Snake & Ladder -The snake and ladder game is an exciting and engaging game that provides players with a fun and challenging gaming experience. The game is designed to simulate the classic board game, where players roll the dice to move their tokens across the board, avoiding snakes and climbing ladders along the way.
