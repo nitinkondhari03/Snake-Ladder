@@ -71,6 +71,6 @@ Create a new Pull Request.
 
 <h2>Deployed Link</h2>
 
-[Snake_Ladder_Game](https://warm-selkie-a7ef5b.netlify.app/)
+[Snake_Ladder_Game](https://snakeladders.netlify.app/)
 
 
