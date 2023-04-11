@@ -65,6 +65,10 @@ Create a new Pull Request.
 
 ![Play_with_multiplayer](https://user-images.githubusercontent.com/112820279/230905175-b67c04cf-6517-463d-8935-34f94625a16c.png)
 
+<h3>When_Any_Player_Wins</h3>
+
+![snake_ladder_wins](https://user-images.githubusercontent.com/112820279/231119916-408afae9-191d-491e-a342-004d0d1d5e80.png)
+
 <h2>Deployed Link</h2>
 
 [Snake_Ladder_Game](https://warm-selkie-a7ef5b.netlify.app/)
