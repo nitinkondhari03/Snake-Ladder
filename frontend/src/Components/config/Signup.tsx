@@ -16,11 +16,13 @@
 import { url } from "inspector";
 import {useState} from "react"
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Signup=()=> {
     const [email, setEmail] = useState<String>("");
     const [password, setPassword] = useState<String>("");
     const [name, setName] = useState<String>("");
+    const navigation =useNavigate();
 
     interface user{
         name:String;
@@ -28,20 +30,24 @@ const Signup=()=> {
         password:String;
         }
 
-    const handleRegister=async()=>{
-        // event.preventdefault();
-        
+    const handleRegister=async(e:any)=>{
+        e.preventDefault();        
         const payload={
-            name,email,password
+            username:name,email,password
         }
         console.log(payload)
         try {
-            axios.post("http://localhost:8080/files",{payload}).then(()=>{
-                alert("User Registered successfully");
-            }
-            ).catch(()=>{
-                alert("something went wrong")
-            })
+            const user= await axios.post("https://snake-ladder.onrender.com/user/register",payload)
+            console.log(user)
+            alert("User Registered successfully");
+            navigation("/login")
+
+            // .then(()=>{
+            //     alert("User Registered successfully");
+            // }
+            // ).catch(()=>{
+            //     alert("something went wrong")
+            // })
             
         } catch (err) {
             alert(err)
@@ -75,7 +81,7 @@ const Signup=()=> {
                 </a>
               </p> */}
             </div>
-            <form className="mt-8 space-y-6" action="/" method="POST">
+            <div className="mt-8 space-y-6">
               {/* <input type="hidden" name="remember" defaultValue="true" /> */}
 
               <div className="-space-y-px rounded-md shadow-sm">
@@ -88,7 +94,7 @@ const Signup=()=> {
                     name="name"
                     type="text"
                     required
-                    className="relative block w-full rounded-t-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-md sm:leading-6"
+                    className="relative block w-full p-2 rounded-t-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-md sm:leading-6"
                     placeholder="Enter your name"
                     onChange={(e) => setName(e.target.value)}
                   />
@@ -103,7 +109,7 @@ const Signup=()=> {
                     type="email"
                     autoComplete="email"
                     required
-                    className="relative block w-full roundedmd border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-md sm:leading-6"
+                    className="relative block w-full p-2 roundedmd border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-md sm:leading-6"
                     placeholder="Email address"
                     onChange={(e) => setEmail(e.target.value)}
                   />
@@ -118,7 +124,7 @@ const Signup=()=> {
                     type="password"
                     autoComplete="current-password"
                     required
-                    className="relative block w-full rounded-b-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-md sm:leading-6"
+                    className="relative block w-full p-2 rounded-b-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-md sm:leading-6"
                     placeholder="Password"
                     onChange={(e) => setPassword(e.target.value)}
                   />
@@ -129,7 +135,7 @@ const Signup=()=> {
                 <button
                 // {!email && !name && !password? isDisabled:onClick={handleRegister}}
                 style={{backgroundColor:"#949b03"}}
-                onClick={handleRegister}
+                onClick={(e)=>handleRegister(e)}
                 //   type="button"
                   className="group relative flex w-full justify-center rounded-md  px-3 py-2 text-md font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
@@ -139,7 +145,7 @@ const Signup=()=> {
                   Register
                 </button>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
