@@ -67,7 +67,7 @@ Create a new Pull Request.
 
 <h3>When_Any_Player_Wins</h3>
 
-![snake_ladder_wins](https://user-images.githubusercontent.com/112820279/231119916-408afae9-191d-491e-a342-004d0d1d5e80.png)
+![snake_ladder_wins](https://user-images.githubusercontent.com/112820279/231120779-cfc529d2-81ca-4eb6-9f45-68c100f45cbf.png)
 
 <h2>Deployed Link</h2>
 
